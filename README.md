@@ -1,7 +1,7 @@
 Spaced mentions
 ===============
 
-Spaced mentions is a simple [vanilla forums](http://vanillaforums.org/) plugin. 
+Spaced mentions is a simple [vanilla forums 2.1](http://vanillaforums.org/) plugin. 
 It allows you to mention people with spaces in their name. 
 `@Markus+Krogh` will be converted into `@Markus Krogh` when shown.
 
