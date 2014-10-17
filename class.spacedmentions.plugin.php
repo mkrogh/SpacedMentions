@@ -1,7 +1,7 @@
 <?php if (!defined('APPLICATION')) exit();
 /**
  * @copyright Copyright 2014 NORDUnet A/S.
- * @license https://www.tldrlegal.com/l/mit
+ * @license MIT License https://www.tldrlegal.com/l/mit
  * @since 0.0 Adding MentionsFormatter
  */
 
