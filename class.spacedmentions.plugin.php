@@ -8,8 +8,8 @@
 // Define the plugin:
 $PluginInfo['jsconnect'] = array(
    'Name' => 'Spaced mentions',
-   'Description' => 'Enables mentions of people who have spaces in their usernames. To mention "Markus Krogh" you would write @Markus+Krogh.',
-   'Version' => '0.1',
+   'Description' => 'Enables mentions of people who have spaces in their usernames. To mention "Markus Krogh" you would write @Markus+Krogh. Also changes username validation to accept spaces.',
+   'Version' => '0.2',
    'RequiredApplications' => array('Vanilla' => '2.0.18b1'),
    'MobileFriendly' => TRUE,
    'Author' => 'Markus Krogh',
@@ -20,6 +20,8 @@ $PluginInfo['jsconnect'] = array(
 );
 
 Gdn::FactoryInstall('MentionsFormatter', 'SpacedMentionsPlugin', __FILE__, Gdn::FactoryInstance);
+$Configuration['Garden']['User']['ValidationRegex'] = "\d\w][\d\w_ "; //Match original + space
+$Configuration['Garden']['User']['ValidationLength'] = "{2,30}"; //One less than original + 10 extra
 
 class SpacedMentionsPlugin extends Gdn_Plugin {
   
