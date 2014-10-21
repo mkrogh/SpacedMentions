@@ -20,8 +20,8 @@ $PluginInfo['jsconnect'] = array(
 );
 
 Gdn::FactoryInstall('MentionsFormatter', 'SpacedMentionsPlugin', __FILE__, Gdn::FactoryInstance);
-$Configuration['Garden']['User']['ValidationRegex'] = "\d\w][\d\w_ "; //Match original + space
-$Configuration['Garden']['User']['ValidationLength'] = "{2,30}"; //One less than original + 10 extra
+SaveToConfig('Garden.User.ValidationRegex', '\d\w_ ', array('Save' => FALSE)); //Match original + space
+SaveToConfig('Garden.User.ValidationLength', '{3,30}', array('Save' => FALSE)); //Original + 10 extra
 
 class SpacedMentionsPlugin extends Gdn_Plugin {
   
