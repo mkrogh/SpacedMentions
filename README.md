@@ -17,4 +17,4 @@ To install just [download](https://github.com/mkrogh/SpacedMentions/archive/mast
 TODO
 ----
 
-- Better handling of username validation, curretly only requires username to start with a digit or character, but it can end with spaces...
+- Better handling of username validation, curretly allows 3 spaces... Not really a good solution.
